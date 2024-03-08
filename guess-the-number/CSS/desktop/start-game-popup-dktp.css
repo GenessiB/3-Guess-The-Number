@@ -1,0 +1,13 @@
+.play-page-msg {
+  font-size: 6rem;
+}
+
+.yes-btn i {
+  font-size: 5rem;
+}
+
+.yes-btn {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 4rem;
+}

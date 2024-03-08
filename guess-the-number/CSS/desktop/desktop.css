@@ -1,0 +1,12 @@
+/* desktop css DKTP = desktop version of css */
+  @import url(./start-game-popup-dktp.css);
+  @import url(./end-game-popup-dktp.css);
+  body {
+    background-image: url(/assets/wepik-export-202402062316101xkV.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: bottom;
+    display: flex;
+    overflow: hidden;
+  }

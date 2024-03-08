@@ -1,0 +1,15 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Felipa&family=Fondamento&family=New+Rocker&display=swap");
+/* mobile css */
+@import url(/CSS/mobile/mobile.css);
+
+/* desktop css */
+@import url(/CSS/desktop/desktop.css) only screen and (min-width: 600px);
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
