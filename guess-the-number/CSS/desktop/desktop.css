@@ -1,6 +1,7 @@
 /* desktop css DKTP = desktop version of css */
 @import url(./start-game-popup-dktp.css);
 @import url(./game-menu-popup-dktp.css);
+@import url(./instructions-popup-dktp.css);
 @import url(./end-game-popup-dktp.css);
 
 body {

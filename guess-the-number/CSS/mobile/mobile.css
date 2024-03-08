@@ -1,6 +1,7 @@
 /* mobile css */
 @import url(./start-game-popup.css);
 @import url(./game-menu-popup.css);
+@import url(./instructions-popup.css);
 @import url(./end-game-popup.css);
 
 body {
