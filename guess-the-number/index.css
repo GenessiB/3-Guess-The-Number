@@ -185,7 +185,7 @@ body {
 .close-seal-container {
   width: 100%;
   height: 2rem;
-  padding-top: .25rem;
+  padding-top: 0.25rem;
 }
 
 .close-seal {
@@ -214,16 +214,18 @@ body {
 }
 
 /* normal-reverse game mode popup */
-.normal-game-popup, .reverse-game-popup {
+.normal-game-popup,
+.reverse-game-popup {
   position: fixed;
   inset: 0;
-  justify-content:end;
+  justify-content: end;
   align-items: center;
   flex-direction: column;
   margin-bottom: 7rem;
 }
 
-.normal-game-content, .reverse-game-content {
+.normal-game-content,
+.reverse-game-content {
   background-image: url(/assets/—Pngtree—glass\ ball\ crystal\ ball_5402134.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,28 +237,33 @@ body {
   width: 27rem;
   height: 27rem;
   position: relative;
-    animation: float 3s infinite ease-in-out; /* Adjust timing and animation type as needed */
+  animation: float 3s infinite ease-in-out; /* Adjust timing and animation type as needed */
 }
 
 @keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px); /* Adjust the distance you want it to float up */
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(
+      -20px
+    ); /* Adjust the distance you want it to float up */
+  }
 }
 
-.h2-merlins-guess{
+.h2-merlins-guess {
   margin-top: -4rem;
 }
 
-.h2-merlins-guess, .h3-number-of-guesses {
+.h2-merlins-guess,
+.h3-number-of-guesses {
   font-family: "Fondamento", cursive;
   font-size: 1.25rem;
 }
 
-.number-of-guesses, .h3-merlins-hint-msg {
+.number-of-guesses,
+.h3-merlins-hint-msg {
   font-family: "Fondamento", cursive;
   font-size: 1.15rem;
   margin-top: 0;
@@ -270,11 +277,11 @@ body {
 }
 
 #secret-number-input {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-
-.set-normal-btns, .quit-btn {
+.set-normal-btns,
+.quit-btn {
   font-family: "Felipa", serif;
   font-weight: bold;
   font-size: 1rem;
@@ -284,10 +291,11 @@ body {
   border-radius: 1rem;
 }
 
-.set-normal-btns:hover, .quit-btn:hover{
-background-color: #9F2E3E;
-color: whitesmoke;
-cursor: pointer;
+.set-normal-btns:hover,
+.quit-btn:hover {
+  background-color: #9f2e3e;
+  color: whitesmoke;
+  cursor: pointer;
 }
 
 #sceret-number-input {
@@ -301,7 +309,6 @@ input[textarea]:focus,
   box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px black;
   outline: 0 none;
 }
-
 
 /* End of Game Popup */
 .end-game-popup {
@@ -323,12 +330,11 @@ input[textarea]:focus,
   justify-content: center;
   align-items: center;
   position: relative;
-
 }
 .h2-end-game-msg {
-width: 15rem;
-text-align: center;
-font-family: "Fondamento", cursive;
+  width: 15rem;
+  text-align: center;
+  font-family: "Fondamento", cursive;
 }
 
 .h3-end-game-msg {
@@ -336,12 +342,12 @@ font-family: "Fondamento", cursive;
 }
 
 .end-game-btns {
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-flex-direction: column;
-width: 100%;
-height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 10rem;
 }
 
 .end-game-btns button {
@@ -360,7 +366,6 @@ height: 10rem;
   box-shadow: 2px 3px 2px orangered;
   cursor: pointer;
 }
-
 
 /* desktop */
 @media (min-width: 600px) {
