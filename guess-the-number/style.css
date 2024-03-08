@@ -4,7 +4,7 @@
 @import url(/CSS/mobile/mobile.css);
 
 /* desktop css */
-@import url(/CSS/desktop/desktop.css) only screen and (min-width: 600px);
+@import url(/CSS/desktop/desktop.css) only screen and (min-width: 1024px);
 
 .visible {
   display: flex;

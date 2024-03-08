@@ -1,0 +1,82 @@
+/* game menu page */
+.wizard-pic {
+  display: none;
+}
+
+.title {
+  color: white;
+  text-shadow: 1px 3px 4px red;
+  font-family: "New Rocker", system-ui;
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem 1rem 4rem 1rem;
+}
+
+.game-menu {
+  aspect-ratio: 2216/2379;
+  background-image: url("/assets/scroll-paper.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu-btns {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-btns p {
+  text-align: center;
+  font-size: 1.15rem;
+  font-family: "Fondamento", cursive;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-btns .normal-btn,
+.reverse-btn {
+  background-color: antiquewhite;
+  font-size: 1.5rem;
+  font-family: "Felipa", serif;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  box-shadow: 2px 3px 2px brown;
+  border-radius: 4px;
+}
+
+.menu-btns .normal-btn:hover,
+.reverse-btn:hover {
+  background-color: aliceblue;
+  box-shadow: 2px 3px 2px orangered;
+  cursor: pointer;
+}
+
+.instructions {
+  border: 1px solid #e4a863;
+  font-size: 2rem;
+  color: #fcd58f;
+  background-color: #e4a863;
+  position: absolute;
+  bottom: 2px;
+  right: 2.25rem;
+  border-radius: 100%;
+}
+
+.instructions:hover {
+  cursor: pointer;
+  color: crimson;
+  border-color: white;
+  background-color: white;
+}

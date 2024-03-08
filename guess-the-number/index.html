@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS/reset.css" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/ced1182a56.js"
       crossorigin="anonymous"
@@ -13,94 +13,96 @@
   </head>
   <body>
     <img class="wizard-pic" src="/assets/—Pngtree—wizard_14131176.png" />
-    <div class="popup play visible">
-      <h2 class="play-page-msg">Ready To Play Guess The Number?</h2>
-      <button class="yes-btn">
-        <i class="fa-regular fa-circle-check"></i>
-      </button>
-    </div>
-    <h1 class="title">Normal</h1>
-    <div class="game-menu hidden">
-      <div class="menu-btns">
-        <p>
-          Welcome to Guess The Number <br />
-          Choose your game mode...
-        </p>
-        <button class="normal-btn">Normal</button>
-        <button class="reverse-btn">Reverse</button>
-        <button class="instructions">
-          <i class="fa-solid fa-circle-question"></i>
+    <main>
+      
+      <h1 class="title">Guess The Number</h1>
+      <div class="popup play hidden">
+        <h2 class="play-page-msg">Ready To Play Guess The Number?</h2>
+        <button class="yes-btn">
+          <i class="fa-regular fa-circle-check"></i>
         </button>
       </div>
-    </div>
-
-    <div class="instructions-popup hidden">
-      <div class="rule-book">
-        <div class="rule-book-content">
-          <p>Normal:<br /><br />Merlin Will Guess Your Secret Number</p>
-          <p>Reverse:<br /><br />You Must Guess Merlin's Secret Number</p>
-        </div>
-        <div class="close-seal-container">
-          <button class="close-seal"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="normal-user-entry-popup hidden">
-      <h2 class="h2-users-secret-number">Enter Your Secret Number</h3>
-      <h3 class="h3-secret-number-msg">Don't Worry Merlin Won't Peak...</h2>
-      <input type="number" placeholder="A number 1 - 100" />
-    </div>
-
-    <div class="normal-game-popup hidden">
-      <!-- in js change the title to normal -->
-      <div class="normal-game-content">
-        <h2 class="h2-merlins-guess">Is your Number ?</h2>
-        <div>
-          <button class="higher-btn set-normal-btns">Higher</button>
-          <button class="lower-btn set-normal-btns">Lower</button>
-          <button class="correct-btn set-normal-btns">Yes</button>
-        </div>
-        <h3 class="h3-number-of-guesses">Numer of Guesses: </h3>
-        <div class="quit-btn-container">
-          <button class="quit-btn">Quit</button>
+      <div class="game-menu visible">
+        <div class="menu-btns">
+          <p>
+            Welcome to Guess The Number <br />
+            Choose your game mode...
+          </p>
+          <button class="normal-btn">Normal</button>
+          <button class="reverse-btn">Reverse</button>
+          <button class="instructions">
+            <i class="fa-solid fa-circle-question"></i>
+          </button>
         </div>
       </div>
-    </div>
 
-    <div class="reverse-game-popup hidden"> <!-- change word to reverse-->
-      <div class="reverse-game-content">
-        <h2 class="h2-reverse-game-msg">Guess My Magical Number...</h2>
-        <h3 class="h3-merlins-hint-msg">Try !</h3> <!-- with js change, higher, lower, or yes-->
-        <h3 class="number-of-guesses">Numer of Guesses: </h3>
-        <form class="secret-number-form">
-          <input type="number" id="secret-number-input" placeholder="Enter a guess 1 - 100" />
-        </form>
-        <div class="quit-btn-container">
-          <button class="quit-btn">Quit</button>
+      <div class="instructions-popup hidden">
+        <div class="rule-book">
+          <div class="rule-book-content">
+            <p>Normal:<br /><br />Merlin Will Guess Your Secret Number</p>
+            <p>Reverse:<br /><br />You Must Guess Merlin's Secret Number</p>
+          </div>
+          <div class="close-seal-container">
+            <button class="close-seal"><i class="fa-solid fa-xmark"></i></button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="end-game-popup hidden">
-      <div class="end-game-content">
-        <!-- in js title change to game over! or congrats! -->
-        <h2 class="h2-end-game-msg"> Merlin guessed your number in  tries!</h2> <!-- Merlin guessed your number in tries! or You guessed Merlin's number in tries!-->
-        <h3 class="h3-end-game-msg">Can Merlin Beat His Score?</h3> <!-- Can He Beat Merlin Score? or Can You Beat Your Score? -->
-        <div class="end-game-btns">
-          <button class="end-game-again-btn">Play Again</button>
-          <button class="end-game-quit-btn">Quit</button>
+      <div class="normal-user-entry-popup hidden">
+        <h2 class="h2-users-secret-number">Enter Your Secret Number</h3>
+        <h3 class="h3-secret-number-msg">Don't Worry Merlin Won't Peak...</h2>
+        <input type="number" placeholder="A number 1 - 100" />
+      </div>
+
+      <div class="normal-game-popup hidden">
+        <!-- in js change the title to normal -->
+        <div class="normal-game-content">
+          <h2 class="h2-merlins-guess">Is your Number ?</h2>
+          <div>
+            <button class="higher-btn set-normal-btns">Higher</button>
+            <button class="lower-btn set-normal-btns">Lower</button>
+            <button class="correct-btn set-normal-btns">Yes</button>
+          </div>
+          <h3 class="h3-number-of-guesses">Numer of Guesses: </h3>
+          <div class="quit-btn-container">
+            <button class="quit-btn">Quit</button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <audio id="background-music" autoplay loop>
-      <source
-        src="assets/alexander-nakarada-tavern-loop-one.mp3"
-        type="audio/mpeg"
-      />
-    </audio>
+      <div class="reverse-game-popup hidden"> <!-- change word to reverse-->
+        <div class="reverse-game-content">
+          <h2 class="h2-reverse-game-msg">Guess My Magical Number...</h2>
+          <h3 class="h3-merlins-hint-msg">Try !</h3> <!-- with js change, higher, lower, or yes-->
+          <h3 class="number-of-guesses">Numer of Guesses: </h3>
+          <form class="secret-number-form">
+            <input type="number" id="secret-number-input" placeholder="Enter a guess 1 - 100" />
+          </form>
+          <div class="quit-btn-container">
+            <button class="quit-btn">Quit</button>
+          </div>
+        </div>
+      </div>
 
+      <div class="end-game-popup hidden">
+        <div class="end-game-content">
+          <!-- in js title change to game over! or congrats! -->
+          <h2 class="h2-end-game-msg"> Merlin guessed your number in  tries!</h2> <!-- Merlin guessed your number in tries! or You guessed Merlin's number in tries!-->
+          <h3 class="h3-end-game-msg">Can Merlin Beat His Score?</h3> <!-- Can He Beat Merlin Score? or Can You Beat Your Score? -->
+          <div class="end-game-btns">
+            <button class="end-game-again-btn">Play Again</button>
+            <button class="end-game-quit-btn">Quit</button>
+          </div>
+        </div>
+      </div>
+
+      <audio id="background-music" autoplay loop>
+        <source
+          src="assets/alexander-nakarada-tavern-loop-one.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+    </main>
     <script src="/JS/index.js"></script>
   </body>
 </html>
