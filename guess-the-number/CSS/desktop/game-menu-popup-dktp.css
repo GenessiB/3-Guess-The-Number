@@ -35,3 +35,10 @@ body {
   max-width: 350px;
   margin-top: 3rem;
 }
+
+.instructions {
+
+  bottom: 5px;
+  right: 30px;
+
+}

@@ -69,9 +69,10 @@
   color: #fcd58f;
   background-color: #e4a863;
   position: absolute;
-  bottom: 2px;
-  right: 2.25rem;
+  bottom: 6px;
+  right: 37px;
   border-radius: 100%;
+  scale: 120%;
 }
 
 .instructions:hover {
