@@ -6,12 +6,9 @@ body {
   flex-direction: column;
 }
 
-.title {
-  height: fit-content;
-  text-align: center;
-  width: 100%;
-  margin-top: 0;
-  font-size: 4rem;
+.game-menu-title {
+  font-size: 5rem;
+  margin-bottom: 5rem;
 }
 
 .wizard-pic {
@@ -31,7 +28,7 @@ body {
   align-items: center;
   justify-content: center;
   scale: 130%;
-  max-width: 350px;
+  max-width: 400px;
   margin-top: 3rem;
 }
 

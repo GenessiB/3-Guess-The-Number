@@ -3,14 +3,15 @@
   display: none;
 }
 
-.title {
-  color: white;
+.game-menu-title {
+  color:white;
   text-shadow: 1px 3px 4px red;
   font-family: "New Rocker", system-ui;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
-  margin: 4rem 1rem 4rem 1rem;
+  margin-bottom: 5rem;
 }
+
 
 .game-menu {
   aspect-ratio: 2216/2379;
@@ -74,6 +75,8 @@
   border-radius: 100%;
   scale: 120%;
 }
+
+
 
 .instructions:hover {
   cursor: pointer;

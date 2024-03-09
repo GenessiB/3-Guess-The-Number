@@ -15,13 +15,14 @@
     <img class="wizard-pic" src="/assets/—Pngtree—wizard_14131176.png" />
     <main>
       
-      <h1 class="title">Guess The Number</h1>
-      <div class="popup play hidden">
+      <!-- <h1 class="title hidden">Guess The Number</h1> add a h2 to game menu and style it seperately -->
+      <div class="popup play visible">
         <h2 class="play-page-msg">Ready To Play Guess The Number?</h2>
         <button class="yes-btn">
           <i class="fa-regular fa-circle-check"></i>
         </button>
       </div>
+      <h2 class="game-menu-title hidden">Guess The Number</h2>
       <div class="game-menu hidden">
         <div class="menu-btns">
           <p>
@@ -36,15 +37,14 @@
         </div>
       </div>
 
-      <div class="instructions-popup visible">
+      <div class="instructions-popup hidden">
+        <h2 class="instructions-header">Rule Handbook </h2>
         <div class="rule-book">
           <div class="rule-book-content">
             <p>Normal:<br /><br />Merlin Will Guess Your Secret Number</p>
             <p>Reverse:<br /><br />You Must Guess Merlin's Secret Number</p>
           </div>
-          <div class="close-seal-container">
             <button class="close-seal"><i class="fa-solid fa-xmark"></i></button>
-          </div>
         </div>
       </div>
 
