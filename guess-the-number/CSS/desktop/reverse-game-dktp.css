@@ -1,0 +1,59 @@
+@media (min-width: 800px) {
+    body {
+      background-position: bottom;
+    }
+  
+    .wizard-pic {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+    }
+  
+    .reverse-game-popup {
+      justify-content: end;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 0rem;
+      display: flex;
+    }
+  
+    .reverse-game-title {
+      font-size: 6rem;
+      top: 1rem;
+      position: absolute;
+    }
+  
+    .reverse-game-content {
+      height: 30rem;
+      width: 30rem;
+    }
+  
+    #magical-number-input {
+      width: 13rem;
+      height: 2rem;
+      font-size: 1.25rem;
+  }
+  
+  .enter-btn {
+      height: 2rem;
+      width: 4rem;
+      font-size: 1rem;
+  }
+  
+  .h2-reverse-game-msg, .h3-merlins-hint-msg, .number-of-guesses  {
+    font-size: 1.4rem;
+  }
+
+  .h2-reverse-game-msg {
+    margin-top: -5rem;
+  }
+  
+  .quit-btn {
+    font-size: 1.25rem;
+    width: 5rem;
+  }
+  
+  
+  }
+  

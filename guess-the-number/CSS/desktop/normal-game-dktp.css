@@ -1,0 +1,57 @@
+@media (min-width: 800px) {
+  body {
+    background-position: bottom;
+  }
+
+  .wizard-pic {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .normal-game-popup {
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0rem;
+    display: flex;
+  }
+
+  .normal-game-title {
+    font-size: 6rem;
+    top: 1rem;
+    position: absolute;
+  }
+
+  .normal-game-content {
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .player-secret-number {
+    width: 12rem;
+    height: 2rem;
+    font-size: 1.25rem;
+}
+
+.enter-btn {
+    height: 2rem;
+    width: 4rem;
+    font-size: 1rem;
+}
+
+.h2-merlins-guess,
+.h3-number-of-guesses,
+.h2-users-secret-number, .h3-secret-number-msg {
+  font-size: 1.4rem;
+}
+
+.set-normal-btns,
+.quit-btn {
+  font-size: 1.25rem;
+  width: 5rem;
+}
+
+
+}

@@ -57,6 +57,17 @@
   border-radius: 4px;
 }
 
+.normal-btn, .reverse-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.normal-btn:visited, .reverse-btn:visited {
+  color: black;
+}
+
 .menu-btns .normal-btn:hover,
 .reverse-btn:hover {
   background-color: aliceblue;

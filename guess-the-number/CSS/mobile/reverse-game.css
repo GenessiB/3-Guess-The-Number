@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Felipa&family=Fondamento&family=New+Rocker&display=swap");
+/* reverse-reverse game mode popup */
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.wizard-pic {
+    display: none;
+    
+}
+
+body, html {
+    overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/wepik-export-202402062316101xkV.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+
+}
+
+.reverse-game-title {
+    color:white;
+    text-shadow: 1px 3px 4px red;
+    font-family: "New Rocker", system-ui;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.reverse-game-popup {
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 7rem;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.reverse-game-content {
+  background-image: url(/assets/—Pngtree—glass\ ball\ crystal\ ball_5402134.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 27rem;
+  height: 27rem;
+  position: relative;
+  gap: 1rem;
+  animation: float 3s infinite ease-in-out; /* Adjust timing and animation type as needed */
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(
+      -20px
+    );
+  }
+}
+
+#magical-number-input {
+    width: 10rem;
+    border-radius: 1rem;
+    border: none;
+    padding-left: 1rem;
+    font-size: 14px;
+}
+
+.enter-btn {
+    height: 1.5rem;
+    width: 3rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Fondamento", cursive;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.205);
+}
+
+.enter-btn:hover {
+    background-color: #9f2e3e;
+    color: whitesmoke;
+}
+
+.h2-reverse-game-msg {
+  margin-top: -4rem;
+}
+
+.h2-reverse-game-msg, .h3-merlins-hint-msg, .number-of-guesses  {
+  font-family: "Fondamento", cursive;
+  font-size: 1.25rem;
+}
+
+.quit-btn {
+  font-family: "Felipa", serif;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 4rem;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.205);
+  border-radius: 1rem;
+}
+ 
+.quit-btn:hover {
+  background-color: #9f2e3e;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+input {
+  font-family: "Fondamento", cursive;
+}
+
+textarea:focus,
+input:focus,
+input[textarea]:focus,
+.uneditable-input:focus {
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px black;
+  outline: 0 none;
+}
