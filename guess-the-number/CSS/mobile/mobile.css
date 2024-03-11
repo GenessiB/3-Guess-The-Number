@@ -1,0 +1,28 @@
+/* mobile css */
+@import url(./start-game-popup.css);
+@import url(./game-menu-popup.css);
+@import url(./instructions-popup.css);
+@import url(./end-game-popup.css);
+
+body {
+  background-image: url(/assets/wepik-export-202402062316101xkV.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  background-position: left bottom;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}

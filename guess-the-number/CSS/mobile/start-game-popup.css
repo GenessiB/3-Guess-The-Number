@@ -1,0 +1,44 @@
+/* ready to play page */
+.play {
+    background-image: url(/assets/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    position: fixed;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .play-page-msg {
+    margin-top: -1rem;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 1px 1px red;
+    font-family: "New Rocker", system-ui;
+  }
+  
+  .yes-btn {
+    margin-top: 1rem;
+    font-family: "Felipa", serif;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 100%;
+    color: whitesmoke;
+    text-shadow: 2px 1px 1px red;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .yes-btn i {
+    font-size: 3.5rem;
+  }
+  
+  .yes-btn:hover {
+    cursor: pointer;
+    color: red;
+  }

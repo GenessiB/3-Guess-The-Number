@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/reset.css" />
+    <link rel="stylesheet" href="/CSS/mobile/normal-game.css" />
+    <link rel="stylesheet" href="/CSS/desktop/normal-game-dktp.css" />
+    <title>Game Mode: Normal</title>
+</head>
+<body>
+    <img class="wizard-pic" src="/assets/—Pngtree—wizard_14131176.png" />
+    <div class="normal-game-popup">
+        <h1 class="normal-game-title">Normal</h1>
+        <div class="normal-game-content">
+            <div class="normal-game">
+                <div class="normal-user-entry-popup hidden">
+                    <h2 class="h2-users-secret-number">Enter Your Secret Number</h3>
+                    <h3 class="h3-secret-number-msg">Don't Worry Merlin Won't Peak...</h2>
+                <form class="normal-game-form">
+                    <input class="player-secret-number" type="number" placeholder="A number 1 - 100" />
+                    <button class="enter-btn">Enter</button>
+                </form>
+                </div>
+                <div class="start-normal-game-popup hidden">
+                    <h2 class="h2-merlins-guess">Is your Number ?</h2>
+                    <div>
+                        <button class="higher-btn set-normal-btns">Higher</button>
+                        <button class="lower-btn set-normal-btns">Lower</button>
+                        <button class="correct-btn set-normal-btns">Yes</button>
+                    </div>
+                    <h3 class="h3-number-of-guesses">Numer of Guesses: </h3>
+                    <div class="quit-btn-container">
+                        <button class="quit-btn">Quit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="end-game-popup visible">
+                <div class="end-game-content">
+                  <!-- in js title change to game over! or congrats! -->
+                  <h2 class="h2-end-game-msg">Merlin guessed your number in tries!</h2>
+                  <!-- Merlin guessed your number in tries! or You guessed Merlin's number in tries!-->
+                  <h3 class="h3-end-game-msg">Can Merlin Beat His Score?</h3>
+                  <!-- Can He Beat Merlin Score? or Can You Beat Your Score? -->
+                  <div class="end-game-btns">
+                    <button class="end-game-again-btn">Play Again</button>
+                    <button class="end-game-quit-btn">Quit</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+</body>
+</html>

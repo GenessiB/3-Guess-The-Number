@@ -1,0 +1,28 @@
+/* desktop css DKTP = desktop version of css */
+@import url(./start-game-popup-dktp.css);
+@import url(./game-menu-popup-dktp.css);
+@import url(./instructions-popup-dktp.css);
+@import url(./end-game-popup-dktp.css);
+
+body {
+  background-image: url(/assets/wepik-export-202402062316101xkV.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-position: bottom;
+  overflow: hidden;
+  align-items: flex-end;
+  /* flex-direction: row; */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+}
