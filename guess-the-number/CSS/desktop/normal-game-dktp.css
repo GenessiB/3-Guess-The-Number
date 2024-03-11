@@ -33,25 +33,38 @@
     width: 12rem;
     height: 2rem;
     font-size: 1.25rem;
-}
+  }
 
-.enter-btn {
+  .enter-btn {
     height: 2rem;
     width: 4rem;
     font-size: 1rem;
-}
+  }
 
-.h2-merlins-guess,
-.h3-number-of-guesses,
-.h2-users-secret-number, .h3-secret-number-msg {
-  font-size: 1.4rem;
-}
+  .h2-merlins-guess,
+  .h3-number-of-guesses,
+  .h2-users-secret-number,
+  .h3-secret-number-msg {
+    font-size: 1.4rem;
+  }
 
-.set-normal-btns,
-.quit-btn {
-  font-size: 1.25rem;
-  width: 5rem;
-}
+  .set-normal-btns,
+  .quit-btn,
+  .end-game-quit-btn {
+    font-size: 1.25rem;
+    width: 5rem;
+  }
 
+  .h2-reverse-game-msg {
+    margin-top: -5rem;
+  }
 
+  .h2-end-game-msg {
+    width: 20rem;
+  }
+
+  .end-game-again-btn {
+    font-size: 1.25rem;
+    width: 8rem;
+  }
 }

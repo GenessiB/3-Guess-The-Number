@@ -9,12 +9,12 @@
 }
 
 .wizard-pic {
-    display: none;
-    
+  display: none;
 }
 
-body, html {
-    overflow: hidden;
+body,
+html {
+  overflow: hidden;
 }
 
 body {
@@ -28,17 +28,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-
 }
 
 .reverse-game-title {
-    color:white;
-    text-shadow: 1px 3px 4px red;
-    font-family: "New Rocker", system-ui;
-    font-size: 3.5rem;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
+  color: white;
+  text-shadow: 1px 3px 4px red;
+  font-family: "New Rocker", system-ui;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .reverse-game-popup {
@@ -49,22 +48,29 @@ body {
   display: flex;
   width: 100vw;
   height: 100vh;
-  
+}
+
+.end-game-popup {
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 7rem;
+  width: 100vw;
+  height: 100vh;
 }
 
 .reverse-game-content {
+    display: flex;
   background-image: url(/assets/—Pngtree—glass\ ball\ crystal\ ball_5402134.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 27rem;
   height: 27rem;
   position: relative;
-  gap: 1rem;
   animation: float 3s infinite ease-in-out; /* Adjust timing and animation type as needed */
 }
 
@@ -74,45 +80,61 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(
-      -20px
-    );
+    transform: translateY(-20px);
   }
 }
 
+.reverse-game {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 #magical-number-input {
-    width: 10rem;
-    border-radius: 1rem;
-    border: none;
-    padding-left: 1rem;
-    font-size: 14px;
+  width: 10rem;
+  border-radius: 1rem;
+  border: none;
+  padding-left: 1rem;
+  font-size: 14px;
 }
 
 .enter-btn {
-    height: 1.5rem;
-    width: 3rem;
-    border: none;
-    border-radius: 1rem;
-    font-family: "Fondamento", cursive;
-    cursor: pointer;
-    background-color: rgba(128, 128, 128, 0.205);
+  height: 1.5rem;
+  width: 3rem;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Fondamento", cursive;
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.205);
 }
 
 .enter-btn:hover {
-    background-color: #9f2e3e;
-    color: whitesmoke;
+  background-color: #9f2e3e;
+  color: whitesmoke;
 }
 
 .h2-reverse-game-msg {
   margin-top: -4rem;
 }
 
-.h2-reverse-game-msg, .h3-merlins-hint-msg, .number-of-guesses  {
+.h2-reverse-game-msg,
+.h3-merlins-hint-msg,
+.number-of-guesses,
+.h3-end-game-msg {
   font-family: "Fondamento", cursive;
   font-size: 1.25rem;
 }
 
-.quit-btn {
+.h2-end-game-msg {
+  font-size: 1.25rem;
+  font-family: "Fondamento", cursive;
+  margin-top: 3rem;
+  width: 18rem;
+  text-align: center;
+}
+
+.quit-btn,
+.end-game-quit-btn {
   font-family: "Felipa", serif;
   font-weight: bold;
   font-size: 1rem;
@@ -121,8 +143,36 @@ body {
   background-color: rgba(128, 128, 128, 0.205);
   border-radius: 1rem;
 }
- 
-.quit-btn:hover {
+
+.end-game-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  justify-content: center;
+}
+
+.end-game-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.end-game-again-btn {
+  font-family: "Felipa", serif;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 7rem;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.205);
+  border-radius: 1rem;
+}
+
+.quit-btn:hover,
+.end-game-quit-btn:hover,
+.end-game-again-btn:hover {
   background-color: #9f2e3e;
   color: whitesmoke;
   cursor: pointer;

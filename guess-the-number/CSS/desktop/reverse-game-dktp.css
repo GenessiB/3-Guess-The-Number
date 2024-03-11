@@ -47,9 +47,19 @@
 
   .h2-reverse-game-msg {
     margin-top: -5rem;
+
+  }
+
+  .h2-end-game-msg {
+    width: 20rem;
+  }
+
+  .end-game-again-btn {
+    font-size: 1.25rem;
+    width: 8rem;
   }
   
-  .quit-btn {
+  .quit-btn, .end-game-quit-btn {
     font-size: 1.25rem;
     width: 5rem;
   }
