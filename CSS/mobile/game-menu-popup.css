@@ -46,7 +46,7 @@
 }
 
 .menu-btns .normal-btn,
-.reverse-btn {
+.reverse-btn, .quit-menu-btn {
   background-color: antiquewhite;
   font-size: 1.5rem;
   font-family: "Felipa", serif;
@@ -55,21 +55,22 @@
   border: none;
   box-shadow: 2px 3px 2px brown;
   border-radius: 4px;
+  color: black;
 }
 
-.normal-btn, .reverse-btn {
+.normal-btn, .reverse-btn, .quit-menu-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
 }
 
-.normal-btn:visited, .reverse-btn:visited {
+.normal-btn:visited, .reverse-btn:visited, .quit-menu-btn:visited {
   color: black;
 }
 
 .menu-btns .normal-btn:hover,
-.reverse-btn:hover {
+.reverse-btn:hover, .quit-menu-btn:hover {
   background-color: aliceblue;
   box-shadow: 2px 3px 2px orangered;
   cursor: pointer;
