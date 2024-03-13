@@ -55,6 +55,13 @@ function isCheating(lastGuess) {
   return false;
 }
 
+function finishedGame() {
+  startNormalGamePopup.classList.replace("visible", "hidden");
+  endGameMsg1.innerHTML = `Tada! Merlin guessed your number in ${numberOfGuesses} guesses!`;
+  endGameMsg2.innerHTML = "Can Merlin beat his score?";
+  endGamePopup.classList.replace("hidden", "visible");
+}
+
 function quitGame(){
   window.location.href = "index.html";
 }
@@ -100,10 +107,9 @@ document.querySelector(".correct-btn").addEventListener("click", (event) => {
     console.error("Crystal Ball says You're cheating!");
     return;
   }
-  startNormalGamePopup.classList.replace("visible", "hidden");
-  endGamePopup.classList.replace("hidden", "visible");
+finishedGame();
 });
-// when user quites game redirect
+// when user quits game redirect
 document.querySelector(".quit-btn").addEventListener("click", (event) => {
   quitGame();
 });

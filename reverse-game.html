@@ -15,11 +15,12 @@
       <div class="reverse-game-content"> 
         <div class="reverse-game visible"> <!-- visible , hidden-->
           <h2 class="h2-reverse-game-msg">Guess My Magical Number...</h2>
-          <h3 class="h3-merlins-hint-msg">Try !</h3>
+          <h3 class="h3-merlins-hint-msg"></h3>
           <!-- with js change, higher, lower, or yes-->
-          <h3 class="number-of-guesses">Numer of Guesses:</h3>
+          <h3 class="number-of-guesses">Numer of Guesses: 0</h3>
           <form class="magical-number-form">
             <input
+            class="users-guess"
               type="number"
               id="magical-number-input"
               placeholder="Enter a guess 1 - 100"
@@ -45,5 +46,6 @@
         </div>
       </div>
     </div>
+    <script src="./JS/reverse-game.js"></script>
   </body>
 </html>
