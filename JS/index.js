@@ -6,12 +6,17 @@ const gameMenuTitleElement = document.querySelector(".game-menu-title");
 const normalGamePopupElement = document.querySelector(".normal-game");
 const normalGameBtnElement = document.querySelector(".normal-btn");
 
+
 const reverseGamePopupElement = document.querySelector(".reverse-game");
 const reverseGameBtnElement = document.querySelector(".reverse-btn");
 
 const instructionsBtnElement = document.querySelector(".instructions");
 const instructionsPopupElement = document.querySelector(".instructions-popup");
 const closeSealBtnElement = document.querySelector(".close-seal");
+
+
+// 
+
 
 // Events
 function readyToPlay() {
@@ -35,3 +40,4 @@ function closeInstructions() {
 yesBtnElement.addEventListener("click", readyToPlay);
 instructionsBtnElement.addEventListener("click", seeInstructions);
 closeSealBtnElement.addEventListener("click", closeInstructions);
+
