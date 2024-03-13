@@ -28,7 +28,9 @@
     height: 30rem;
     width: 30rem;
   }
-
+.end-game-content {
+  margin-top: 8rem;
+}
   .player-secret-number {
     width: 12rem;
     height: 2rem;

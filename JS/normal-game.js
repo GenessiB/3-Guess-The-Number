@@ -1,10 +1,17 @@
 // Normal Game
+const landingPopupElement = document.querySelector(".play");
+const gameMenuElement = document.querySelector(".game-menu");
+const gameMenuTitleElement = document.querySelector(".game-menu-title");
 const normalFormElement = document.querySelector(".normal-game-form");
 const playerSecretNumberInput = document.querySelector(".player-secret-number");
 const normalUserEntryPopup = document.querySelector(".normal-user-entry-popup");
 const startNormalGamePopup = document.querySelector(".start-normal-game-popup");
 const merlinsGuessElement = document.querySelector(".h2-merlins-guess");
 const numberOfGuessesElement = document.querySelector(".h3-number-of-guesses");
+const endGamePopup = document.querySelector(".end-game-popup");
+const endGameMsg1 = document.querySelector(".h2-end-game-msg");
+const endGameMsg2 = document.querySelector(".h3-end-game-msg");
+const endGameQuitBtn = document.querySelector(".end-game-quit-btn");
 
 // variables
 let secretNumber = 0; // stores user's secret number
@@ -27,6 +34,14 @@ const GuessEnum = {
   higher: 1,
 };
 
+// called to end game when cheating
+function whenCheatingGameIsOver() {
+  endGameMsg1.innerText = "Uh Oh!";
+  endGameMsg2.innerText = "Crystal Ball Says You're Cheating...";
+  startNormalGamePopup.classList.replace("visible", "hidden");
+  endGamePopup.classList.replace("hidden", "visible");
+}
+
 function isCheating(lastGuess) {
   const isSecretNumberHigherOrEqual = secretNumber >= currentGuess;
   const isSecretNumberLowerOrEqual = secretNumber <= currentGuess;
@@ -35,11 +50,13 @@ function isCheating(lastGuess) {
   } else if (lastGuess === GuessEnum.higher && isSecretNumberLowerOrEqual) {
     return true;
   } else if (lastGuess === GuessEnum.correct && secretNumber !== currentGuess) {
-    // you understand ? i think i sdo
     return true;
   }
-  // if you're clicking equal but I'm not
   return false;
+}
+
+function quitGame(){
+  window.location.href = "index.html";
 }
 
 //  event listeners
@@ -56,8 +73,9 @@ normalFormElement.addEventListener("submit", (event) => {
 // when user clicks higher btn
 document.querySelector(".higher-btn").addEventListener("click", (event) => {
   if (isCheating(GuessEnum.higher)) {
-    // you mofo stop cheating
-    console.error("You're cheating !!!");
+    // stop cheating
+    whenCheatingGameIsOver();
+    console.error("Crystal Ball says You're cheating!");
     return;
   }
   smallestNum = currentGuess + 1;
@@ -66,8 +84,9 @@ document.querySelector(".higher-btn").addEventListener("click", (event) => {
 // when user clicks lower btn
 document.querySelector(".lower-btn").addEventListener("click", (event) => {
   if (isCheating(GuessEnum.lower)) {
-    // you mofo stop cheating
-    console.error("You're cheating !!!");
+    // stop cheating
+    whenCheatingGameIsOver();
+    console.error("Crystal Ball says You're cheating!");
     return;
   }
   biggestNum = currentGuess - 1;
@@ -76,18 +95,24 @@ document.querySelector(".lower-btn").addEventListener("click", (event) => {
 // when user clicks yes btn
 document.querySelector(".correct-btn").addEventListener("click", (event) => {
   if (isCheating(GuessEnum.correct)) {
-    // you mofo stop cheating
-    console.error("You're cheating !!!");
+    // stop cheating
+    whenCheatingGameIsOver();
+    console.error("Crystal Ball says You're cheating!");
     return;
   }
   startNormalGamePopup.classList.replace("visible", "hidden");
-  document
-    .querySelector(".end-game-popup")
-    .classList.replace("hidden", "visible");
+  endGamePopup.classList.replace("hidden", "visible");
 });
-// when user quites game redirecy
+// when user quites game redirect
 document.querySelector(".quit-btn").addEventListener("click", (event) => {
-  window.location.href = "index.html";
+  quitGame();
+});
+// end Game Popup quit btn
+endGameQuitBtn.addEventListener('click', (event) => {
+  quitGame();
 });
 
-// need to figure out a way to prevent it from continuing letting player guess when the secretynuber has been passed
+// play again
+document.querySelector(".end-game-again-btn").addEventListener('click', (event) => {
+  window.location.href = "normal-game.html";
+});
